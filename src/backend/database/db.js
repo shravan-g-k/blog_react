@@ -123,6 +123,6 @@ class DataBase{
   }
 }
 
-const db = new DataBase();
+const dbService = new DataBase();
 
-export default db;
+export default dbService;
