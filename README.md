@@ -1,12 +1,40 @@
-# React + Vite
+# Blog Site (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern blog application built with React and Vite. Features include:
 
-Currently, two official plugins are available:
+- User authentication
+- Create, edit, and view blog posts
+- Rich text editor for writing posts
+- Appwrite backend integration for database and storage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
 
-## Expanding the ESLint configuration
+- `src/components/` — Reusable UI components
+- `src/pages/` — Main application pages (Home, AllPosts, AddPosts, EditPost, Post, Login, SignUp)
+- `src/backend/` — Appwrite authentication and database logic
+- `src/config/` — Configuration for environment variables
+- `src/store/` — Redux store and slices for state management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Set up your `.env` file with Appwrite credentials and TinyMCE API key.
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+## Tech Stack
+
+- React
+- Vite
+- Appwrite
+- Redux
+- TinyMCE (Rich Text Editor)
+
+---
+
+Feel free to customize and extend the project for your own blogging needs!
