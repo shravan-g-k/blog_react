@@ -1,9 +1,11 @@
 class Config {
-  static projectId = String(process.env.VITE_APPWRITE_PROJECT_ID);
-  static projectName = String(process.env.VITE_APPWRITE_PROJECT_NAME);
-  static endpoint = String(process.env.VITE_APPWRITE_ENDPOINT);
-  static databaseId = String(process.env.APPWRITE_DATABASE_ID);
-  static tableId = String(process.env.APPWRITE_TABLE_ID);
+  static projectId = import.meta.env.VITE_APPWRITE_PROJECT_ID;
+  static projectName = import.meta.env.VITE_APPWRITE_PROJECT_NAME;
+  static endpoint = import.meta.env.VITE_APPWRITE_ENDPOINT;
+  static databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
+  static tableId = import.meta.env.VITE_APPWRITE_TABLE_ID;
+  static bucketId = import.meta.env.VITE_APPWRITE_BUCKET_ID;
+  static tinyMceApiKey = import.meta.env.VITE_TINYMCE_API_KEY;
 }
 
 export default Config;

@@ -11,8 +11,8 @@ import Login from './pages/Login';
 import AllPosts from './pages/AllPosts';
 import EditPost from './pages/EditPost';
 import Post from './pages/Post';
-import Signup from './pages/Signup';
 import AddPost from './pages/AddPosts';
+import Signup from './pages/SignUp.jsx'
 
 const router = createBrowserRouter([
   {

@@ -1,10 +1,8 @@
-import React from 'react'
 import Container from '../container/Container';
 import Logo from '../Logo';
 import { Link, useNavigate } from 'react-router-dom';
 import LogoutBtn from './LogoutBtn';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 function Header() {
     const navigate = useNavigate();
@@ -32,7 +30,7 @@ function Header() {
     },
     {
         name: "Add Posts",
-        slug: "/add-posts",
+        slug: "/add-post",
         active: authStatus
     }
     ];

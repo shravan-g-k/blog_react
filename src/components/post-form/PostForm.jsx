@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 import dbService from '../../backend/database/db';
 
 function PostForm({ post }) {
+  
   const { register, handleSubmit, watch, setValue, control, getValues } =
     useForm({
       defaultValues: {
@@ -22,6 +23,7 @@ function PostForm({ post }) {
 
   const navigate = useNavigate();
   const userData = useSelector((state) => state.auth.userData);
+  
 
   const submit = async (data) => {
     if (post) {
